@@ -1,0 +1,32 @@
+.container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  
+  
+ .details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 35rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border: 5px solid teal;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color:rgb(29, 205, 205); ;
+ 
+  }
+  
+  .details > div{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .details strong{
+    display: inline-block;
+    width: 20%;
+  }

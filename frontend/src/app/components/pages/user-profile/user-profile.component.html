@@ -1,0 +1,13 @@
+
+  <app-title title =" User Profile" margin = "1.5rem 0 0 2.5rem"></app-title>
+  <div class="container" *ngIf="user">
+
+    <div class="details">
+      <div><strong>Name:</strong> {{ user.name }}</div>
+      <div><strong>Email:</strong> {{ user.email }}</div>
+      <div><strong>Address:</strong> {{ user.address }}</div>
+      <div><strong>Admin:</strong> {{ user.isAdmin }}</div>
+   
+  </div>
+
+</div>
