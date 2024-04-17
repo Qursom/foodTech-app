@@ -1,5 +1,5 @@
-import dotenv from "dotenv";
-dotenv.config();
+//import dotenv from "dotenv";
+require("dotenv").config({ path: "./config/.env" });
 
 import path from"path";
 import express from "express";
