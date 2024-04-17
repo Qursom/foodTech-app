@@ -1,5 +1,5 @@
-//import dotenv from "dotenv";
-require("dotenv").config({ path: "./config/.env" });
+import dotenv from "dotenv";
+dotenv.config();
 
 import path from"path";
 import express from "express";
@@ -14,8 +14,8 @@ const app = express();
 app.use(express.json())
 app.use(cors({
     credentials:true,
-    origin:"http://localhost:4200"
-}))
+    origin:["http://localhost:4200"]
+}));
 
 
 app.use("/api/foods",foodRouter);
