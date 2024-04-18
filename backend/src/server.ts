@@ -7,7 +7,13 @@ import path from"path";
 import express from "express";
 import cors from "cors";
 import dbConnect from "./configs/database.config";
-dbConnect();
+
+const mongoURI = process.env.Mongo_URI;
+if (!mongoURI) {
+    console.error('MongoDB URI is not provided in environment variables.');
+    process.exit(1);
+}
+dbConnect(mongoURI);
 import foodRouter from "./router/food.router";
 import userRouter from "./router/user.router";
 import orderRouter from "./router/order.router";
