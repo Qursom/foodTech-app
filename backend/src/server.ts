@@ -30,14 +30,19 @@ app.use("/api/foods",foodRouter);
 app.use("/api/users",userRouter);
 app.use("/api/orders",orderRouter);
 
-app.use(express.static('dist'));
+
+
+app.use(express.static(path.join(__dirname, 'dist/browser')));
+
+// Wildcard route to serve the Angular app for all routes
 app.get('*', (req: Request, res: Response) => {
-    const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+   const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
     console.log('Requested URL:', fullUrl);
     res.sendFile(path.join(__dirname, 'dist/browser', 'index.html'));
 });
 
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-    console.log("Website served on http://localhost:" + port);
+    console.log("Website served on port" + port);
 })
