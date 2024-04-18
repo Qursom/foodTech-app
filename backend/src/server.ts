@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 });
 
 import path from"path";
-import express from "express";
+import express, { Request, Response } from "express";
 import cors from "cors";
 import dbConnect from "./configs/database.config";
 
@@ -30,10 +30,12 @@ app.use("/api/foods",foodRouter);
 app.use("/api/users",userRouter);
 app.use("/api/orders",orderRouter);
 
-app.use(express.static('public'));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname,'public/browser/', 'index.html'))
-})
+app.use(express.static('dist'));
+app.get('*', (req: Request, res: Response) => {
+    const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+    console.log('Requested URL:', fullUrl);
+    res.sendFile(path.join(__dirname, 'dist/browser', 'index.html'));
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
