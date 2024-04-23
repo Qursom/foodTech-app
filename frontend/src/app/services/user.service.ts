@@ -25,7 +25,7 @@ export class UserService {
   }
 
   login(userLogin: IUserLogin): Observable<any> {
-    console.log('userLogin', userLogin);
+  
     return this.http.post<any>(USER_LOGIN_URL, userLogin).pipe(
       tap((response) => {
         if (response && response.token) {
