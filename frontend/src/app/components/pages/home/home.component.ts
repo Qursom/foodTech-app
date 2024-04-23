@@ -17,7 +17,7 @@ export class HomeComponent {
       if (params.searchTerm)
         foodsObservalbe = this.foodService.getAllFoodsBySearchTerm(params.searchTerm);
       else if (params.tag){
-        console.log("paramsof tag",params.tag);
+       
         foodsObservalbe = this.foodService.getAllFoodsByTag(params.tag);
       }
      
