@@ -1,13 +1,10 @@
-## Lesson
-1. Introduciton to the course
+## FoodTech (MEAN stack app) 
+ ##  INTRODUCTION : A Next-Gen Food Shopping Experience
+Took on a key role in developing a revolutionary food shopping platform. Utilized the MEAN stack with TypeScript to build core functionalities and integrate MongoDB, PayPal, Google Maps, and JWT for secure and efficient operations. Developed features like streamlined ordering, personalized recommendations, real-time tracking, and vendor management independently. It consists of  MEAN stack(MongoDb,Typescript, Angular, NodeJs) powers seamless integration of PayPal, Google Maps, JWT, and REST APIs for secure user-friendly food shopping.
 
-2. Install development tools
-
-3. Create Angular App
-
+3. Create Angular Ap
    1. Create project's folder
    2. Install @angular/cli
-   3. Create App as frontend
 4. Add Header
 
     1. Generate Component
@@ -99,119 +96,96 @@
 11. Login Page
 
     1. Generate Component
-
-       1. Add to routes
-       2.  Add ts
-       3.  Add html
-        4. Import Reactive Forms Module
-        5. Add Css
-        7. Add Login Api
-
-
    2. Add jsonwebtoken
-    3. Generate User Service
+   3. Generate User Service
 
-        Generate User model
-        Add User Subject
-        Add Login Method
-        Add User Urls
-        Generate IUserLogin interface
-        Add ngx-toastr
-        Import Module
-        Import BrowserAnimationsModule
-        Add styles in angular.json
-        Add to Header
-        Add Local Storage methods
-        Add Logout Method
-        Add to Header
-    Make Components For Login Page
+      1.  Generate User model
+       2. Add User Subject
+       3. Add Login Method
+        4.Add User Urls
+       5. Generate IUserLogin interface
+   4. Add ngx-toastr
+  
+  5.  Add to Header
+       1. Add Local Storage methods
+       2. Add Logout Method
+       3. Add to Header
+   6. Make Components For Login Page
 
-        Input Container
-        Input Validation
-        Text Input
-        Default Button
-        Connect Login API To MongoDB Atlas
+       1. Input Container
+       2. Input Validation
+       3. Text Input
+       4. Default Button
+       5. Connect Login API To MongoDB Atlas
+       6. Moving Apis into routers
+        7.Create MongoDB Atlas
+       8. Create .env file
+       9. Install packages
+       10. Connect to MongoDB Atlas
+  
 
-        Moving Apis into routers
-        Create MongoDB Atlas
-        Create .env file
-        Install
-        mongoose
-        dotenv
-        bcryptjs
-        express-async-handler
-        Connect to MongoDB Atlas
-        Use MongoDB instead of data.ts in apis
+12. Register User
 
- Register User
+   1. Add Register api
+   2. Add Register service method
+   3. Add Register link
+   4. Add Register Component
+   5. Loading!
 
-    Add Register api
-    Add Register service method
-    Add Register link
-    Add Register Component
-    Loading!
+   6. Add Image
+   7. Add Component
+   8. Add Service
+   9. Add Interceptor
+13.Checkout Page
 
-    Add Image
-    Add Component
-    Add Service
-    Add Interceptor
-Checkout Page
+   1. Create Order Model
+   2. Create Checkout Page Component
+   3. Add To Router
+    4.Add User to User Service
+   5. Add Cart to Cart Service
+   6.Create Order Items List Component
+   7. Adding Map To The Checkout Page
+   8. Add Leaflet npm package
+   9. Add @types/leaflet
+   10. Add Css to angular.json
+   11. Add AddressLatLng to Order Model
+    12. Create Map component
+14.Add Auth Guard
+15. Save Order
+ 1.   Add Order Model
+ 2.  Add Order Status Enum
+ 3.  Add Auth Middleware
+ 4.  Add Order Router
+ 5. Add create API
+ 6.  Add Order Urls to urls.ts
+ 7. Add Order Service
+ 8.  Add Auth Interceptor
 
-    Create Order Model
-    Create Checkout Page Component
-    Add To Router
-    Add User to User Service
-    Add Cart to Cart Service
-    Create Order Items List Component
-    Adding Map To The Checkout Page
-    Add Leaflet npm package
-    Add @types/leaflet
-    Add Css to angular.json
-    Add AddressLatLng to Order Model
-    Create Map component
-    Add to checkout page
-    Add TS
-    Change app-map selector to map
-    Add Html
-    Add CSS
-    Add Auth Guard
-Save Order
-    Add Order Model
-    Add Order Status Enum
-    Add Auth Middleware
-    Add Order Router
-    Add create API
-    Add Order Urls to urls.ts
-    Add Order Service
-    Add create Method
-    Add Auth Interceptor
+15.Payment Page
+   1. Generate Component
+   2. Add 'getOrderForCurrentUser' api
+   3. Add Order Service method
+   4. Connect Component to Service
 
-Payment Page
+16.Adding Paypal
+   1. Generate Component
+   2. Add to payment page
+   3. Get Paypal sandbox account
+      
+17.Order Track Page
+  1. Generate Component
 
-    Generate Component
-    Add 'getOrderForCurrentUser' api
-    Add Order Service method
-    Connect Component to Service
-    Make the map component readonly
-Adding Paypal
+19. Order History page
+   1. Get All orders Api from backend
+   2. Generate component 
+   3.  Generate a service 
+   4. Genrate a new route 
 
-    Generate Component
-    Add to payment page
-    Get Paypal client Id
-    Add Paypal JS to index.html
-    Set up Paypal button
-    Add Pay api to order router
-    Get Paypal sandbox account
-Order Track Page
-   Generate Component
+20. User profile
+   1.  Generate component 
+   2.  Generate a service 
+   3.  Genrate a new route 
+      
+21- Code Deployment on Render
 
 
-1. Get All orders Api from backend
-2. Generate component for all orders
-3.  Generate a service for all orders
-4. genrate a new route for all orders Api
-
-1.  Generate component for User profile
-2.  Generate a service for User Profile
-3.  genrate a new route for User Profile
- 
